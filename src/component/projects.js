@@ -15,13 +15,13 @@ class Projects extends Component {
         <div className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
-            <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'Blue'}} > Project #1</CardTitle>
+            <CardText> This is a web application whuch shows and Display the current weather and current location based on the user current ;ocation
+              </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
+              <Button colored><a href="https://github.com/sujanbhattarai/SE_I---Weather-Rader" rel="noopener noreferrer" target="_blank">
+                    <i className="fa fa-github-square" aria-hidden="true" /> GitHub
+                  </a></Button>
               <Button colored>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -31,13 +31,14 @@ class Projects extends Component {
 
           {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
-            <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
+            <CardTitle style={{color: '#fff', height: '176px', background: "red"}} > Project #2</CardTitle>
+            <CardText>This app request/donate blood type depending on the individual donate/request the blood.</CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
+              <Button colored>
+              <a href="https://github.com/sujanbhattarai/BloodMe" rel="noopener noreferrer" target="_blank">
+                    <i className="fa fa-github-square" aria-hidden="true" /> GitHub
+                  </a>
+              </Button>
               <Button colored>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -47,13 +48,12 @@ class Projects extends Component {
 
           {/* Project 3 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
-            <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'green'}} > Project #3</CardTitle>
+            <CardText>marketplace app that conglomerates results from other marketplaces such as Facebook Marketplace, Ebay, Amazon, Wish. </CardText>
             <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
+              <Button colored><a href="https://github.com/sujanbhattarai/BloodMe" rel="noopener noreferrer" target="_blank">
+                    <i className="fa fa-github-square" aria-hidden="true" /> GitHub
+                  </a></Button>
               <Button colored>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
@@ -79,9 +79,6 @@ class Projects extends Component {
     }
 
   }
-
-
-
   render() {
     return(
       <div>
@@ -98,11 +95,8 @@ class Projects extends Component {
               <div className="contact">{this.toggleCategories()}</div>
             </Cell>
           </Grid>
-
-
       </div>
     )
   }
 }
-
 export default Projects;
